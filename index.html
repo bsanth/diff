@@ -1,0 +1,65 @@
+<html>
+
+<head>
+
+
+<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+<style>
+
+body
+{
+	font-family: 'Oxygen', sans-serif;
+	padding-top:10%;
+	padding-left:20%;
+	font-size:22pt;
+}
+
+#term1, #term2
+{
+	font-size:22pt;
+}
+
+#theButton
+{
+	padding:1%;
+	font-size:14pt;
+}
+
+</style>
+
+<script>
+
+function init()
+{
+
+document.getElementById("term1").focus();
+
+}
+
+function google()
+{
+
+window.location = "http://www.google.com/#q=difference between "+term1.value+" and "+term2.value;
+
+}
+
+</script>
+
+</head>
+
+<body onload = "init()" >
+
+Difference Between 
+
+<input type="text" id="term1" />
+
+and
+
+<input type="text" id="term2" /><br /><br />
+
+<input id="theButton" onclick="google()" type="button" value="Now Google it!" /> <small><small>Phew!</small></small>
+
+</body>
+
+</html>
